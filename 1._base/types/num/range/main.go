@@ -3,21 +3,12 @@ package main
 import (
 	"fmt"
 	"math"
-	"math/cmplx"
+
 )
 
-var (
-	ToBe   bool       = false
-	MaxInt uint64     = 1<<64 - 1            //??一般來講不知道要這樣寫，math.MaxUint64有定義
-	z      complex128 = cmplx.Sqrt(-5 + 12i) //複數
-)
 
 //%b(二進制表示)
 func main() {
-	fmt.Printf("Type: %T Value: %v\n", ToBe, ToBe)
-	fmt.Printf("Type: %T Value: %v\n", MaxInt, MaxInt)
-	fmt.Printf("Type: %T Value: %v\n", z, z)
-
 	fmt.Printf("Type: %T MaxInt: %v\n", math.MaxInt, math.MaxInt)
 	fmt.Printf("Type: %T MinInt: %v\n", math.MinInt, math.MinInt)
 	//int8可接受負整數，並用最左邊的位元來代表正負號，所以說int8的最大值會比uint8小(因為少一個bit)。
