@@ -15,7 +15,4 @@ func main() {
 	var myInt8_3 int8 = -88
 	myInt8_4 := uint8(myInt8_3)
 	fmt.Printf("Type: %T myInt8_2: %v\n", myInt8_4, myInt8_4)
-
-	
-
 }

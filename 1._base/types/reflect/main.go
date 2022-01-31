@@ -14,8 +14,8 @@ type Member struct {
 func main() {
 	var myInt int = 230
 	fmt.Println(reflect.TypeOf(myInt))  //output int
-	fmt.Println(reflect.ValueOf(myInt)) //output 8
-	fmt.Println(reflect.TypeOf(myInt).Size())
+	fmt.Println(reflect.ValueOf(myInt)) //output 230
+	fmt.Println(reflect.TypeOf(myInt).Size()) //output 8
 	member := Member{1, "Adam", 100}
 	fmt.Println(reflect.TypeOf(member))  //output main.Member  //取得所有元素
 	fmt.Println(reflect.ValueOf(member)) //output {1 Adam 100}/獲得值
