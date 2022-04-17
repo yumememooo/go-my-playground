@@ -20,6 +20,8 @@ func SetupRouter() *gin.Engine {
 	gin.DisableConsoleColor()
 
 	r := gin.Default()
+	r.NoMethod(HandleNotFound)
+	r.NoRoute(HandleNotFound)
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerfiles.Handler)) //http://localhost:8080/swagger/index.html
 
 	docs.SwaggerInfo.Schemes = []string{"http", "https"}
@@ -80,3 +82,11 @@ type Login struct {
 	User     string `form:"user" json:"user" xml:"user"  binding:"required"`
 	Password string `form:"password" json:"password" xml:"password" binding:"required"`
 }
+
+func HandleNotFound(c *gin.Context) {
+	handleErr := NotFound()
+	handleErr.Request = c.Request.Method + " " + c.Request.URL.String()
+	c.JSON(handleErr.Code, handleErr)
+	return
+}
+
