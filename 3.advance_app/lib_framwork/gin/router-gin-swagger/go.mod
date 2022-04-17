@@ -1,4 +1,4 @@
-module go-demo/2._advance/lib_framwork/gin/router-gin-swagger
+module go-demo/3.advance_app/lib_framwork/gin/router-gin-swagger
 
 go 1.17
 

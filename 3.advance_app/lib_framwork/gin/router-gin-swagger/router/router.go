@@ -6,7 +6,7 @@ import (
 	docs "github.com/go-project-name/docs" 需要對應到你自己的project
 	docs "go-demo/2._advance/lib_framwork/gin/router/docs" //改成這樣 go.mod必須是一樣的module name,不可以用main
 	*/
-	docs "go-demo/2._advance/lib_framwork/gin/router-gin-swagger/docs"
+	docs "go-demo/3.advance_app/lib_framwork/gin/router-gin-swagger/docs"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

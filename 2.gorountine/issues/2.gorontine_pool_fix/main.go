@@ -50,7 +50,7 @@ func main() {
 
 	fmt.Printf("running goroutines: %d\n", p.Running())
 	p.Release() //不須要跑了 強制先做release
-
+	fmt.Printf("goroutines: %d  Release\n", p.Running())
 	select {} //避免退出
 }
 

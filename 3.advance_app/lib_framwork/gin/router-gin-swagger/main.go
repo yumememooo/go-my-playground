@@ -1,6 +1,6 @@
 package main
 
-import "go-demo/2._advance/lib_framwork/gin/router-gin-swagger/router"
+import "go-demo/3.advance_app/lib_framwork/gin/router-gin-swagger/router"
 
 // @title           Swagger Example API
 // @version         1.0
