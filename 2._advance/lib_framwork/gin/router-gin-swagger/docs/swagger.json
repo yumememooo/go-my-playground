@@ -4,10 +4,11 @@
         "description": "This is a sample server celler server.",
         "title": "Swagger Example API",
         "contact": {},
+        "license": {},
         "version": "1.0"
     },
     "paths": {
-        "/example/helloworld": {
+        "/getJson": {
             "get": {
                 "description": "do ping",
                 "consumes": [

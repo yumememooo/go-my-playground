@@ -1,10 +1,11 @@
 info:
   contact: {}
   description: This is a sample server celler server.
+  license: {}
   title: Swagger Example API
   version: "1.0"
 paths:
-  /example/helloworld:
+  /getJson:
     get:
       consumes:
       - application/json
