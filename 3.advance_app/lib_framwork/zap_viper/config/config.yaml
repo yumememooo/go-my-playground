@@ -1,0 +1,4 @@
+Name: myapp
+port: 3306
+File: "log/app.log"
+Level: "INFO"
